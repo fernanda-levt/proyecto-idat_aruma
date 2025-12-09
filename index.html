@@ -12,40 +12,52 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <!--Logo-->
-    <div>Aruma</div>
-
-    <!--Barra buscador-->
-    <div>
-      <input type="text" placeholder="Buscar producto">
+  <header class="header">
+    <div class="top-bar">
+      <p><strong>ENVÍO EXPRESS,</strong> pide hoy y recibe en 1 hora. <span>Aplican T&C</span></p>
     </div>
 
-    <!--Opciones-->
-    <div>
-      <a>Hola, <br> inicia sesión</a>
-      <a>Encuentra <br> tu tienda</a>
-      <a>Carrito</a>
+    <div class="main.header">
+      <div class="header-content">
+        <!--Logo-->
+        <div class="logo img">
+          <a href="index.html">
+            <img src="assets/images/logo-aruma-nombre.png" alt="Aruma logo">
+          </a>
+        </div>
+
+        <!--Barra buscador-->
+        <div class="search-box">
+          <input type="text" placeholder="Buscar producto">
+        </div>
+
+        <!--Opciones-->
+        <div class="header-options">
+          <a>Hola, <br> inicia sesión</a>
+          <a>Encuentra <br> tu tienda</a>
+          <a>Carrito</a>
+        </div>
+      </div>
     </div>
 
-    <nav> <!--Barra de navegación-->
-      <a>Inicio</a>
-      <a>Marcas</a>
-      <a>Cuidado de la piel</a>
-      <a>Dermocosmética</a>
-      <a>Cabello</a>
-      <a>Maquillaje</a>
-      <a>Cuidado corporal</a>
-      <a>Accesorios</a>
-      <a>Fragancias</a>
-      <a>Descuentos</a>
-      <a>Sets & Regalos</a>
+    <nav class="nav-menu"> <!--Barra de navegación-->
+      <a href="#">Inicio</a>
+      <a href="#">Marcas</a>
+      <a href="#">Cuidado de la piel</a>
+      <a href="#">Dermocosmética</a>
+      <a href="#">Cabello</a>
+      <a href="#">Maquillaje</a>
+      <a href="#">Cuidado corporal</a>
+      <a href="#">Accesorios</a>
+      <a href="#">Fragancias</a>
+      <a href="#">Descuentos</a>
+      <a href="#">Sets & Regalos</a>
     </nav>
   </header>
 
   <!--Banner de promoción-->
-  <section>
-    <div>
+  <section class="banner">
+    <div class="banner-text">
       <h1>¡Cientos de opciones para sorprender!</h1>
       <p>Encuentra el regalo ideal en Arumaland 🎁</p>
     </div>
@@ -53,99 +65,111 @@
 
   <!--Productos nuevos-->
   <section>
-    <h2>Lo más nuevo</h2>
+    <div class="header-productos-nuevos">
+      <h2>Lo más nuevo</h2>
+      <a>Ver todos</a>
+    </div>
 
-    <div>
-      <div> <!--Producto1-->
-        <h3>Revox</h3>
-        <p>
-          Sérum Revox Just Retinol 0.3% + Niacinamide 5%
-        </p>
-        <p>S/ 29.90</p>
-        <button>Añadir</button>
+    <div class="slider-container"> <!--Sección prodcutos-->
+      <button class="btn-arrow">←</button>
+
+      <div class="cards"> <!--Productos-->
+        <div class="card-product"> <!--Producto1-->
+          <h3>Revox</h3>
+          <p>
+            Sérum Revox Just Retinol 0.3% + Niacinamide 5%
+          </p>
+          <p>S/ 29.90</p>
+          <button class="btn-add">Añadir</button>
+        </div>
+
+        <div class="card-product"> <!--Producto2-->
+          <h3>Tocobo</h3>
+          <p>
+            Protector Solar Tocobo Blur Finish Sun Cushion White
+          </p>
+          <p>S/ 79.90</p>
+          <button class="btn-add">Añadir</button>
+        </div>
+
+        <div class="card-product"> <!--Producto3-->
+          <h3>Sheglam</h3>
+          <p>
+            Rubor En Gel Jelly-Licious Ahoy Sheglam
+          </p>
+          <p>S/ 41.90</p>
+          <button class="btn-add">Añadir</button>
+        </div>
+
+        <div class="card-product"> <!--Producto4-->
+          <h3>Masglo</h3>
+          <p>
+            Esmalte Masglo Clinical Nails Emergency 4ml
+          </p>
+          <p>S/ 69.90</p>
+          <button class="btn-add">Añadir</button>
+        </div>
+
+        <div class="card-product"> <!--Producto5-->
+          <h3>Sheglam</h3>
+          <p>
+            Gel De Cejas Con Brocha Crystal Clear Sheglam
+          </p>
+          <p>S/ 31.90</p>
+          <button class="btn-add">Añadir</button>
+        </div>
+
+        <!--Demás productos en movimiento-->
+        <div hidden>
+          <div class="card-product"> <!--Producto6-->
+            <h3>L'oreal Paris</h3>
+            <p>
+              Labial Líquido Infallible Laque Resistance Worth It Medium L'Oreal Paris
+            </p>
+            <p>S/ 75.90</p>
+            <button>Añadir</button>
+          </div>
+
+          <div class="card-product"> <!--Producto7-->
+            <h3>Sheglam</h3>
+            <p>
+              Rubor Color Bloom Acabado Mate Devoted Sheglam
+            </p>
+            <p>S/ 39.90</p>
+            <button>Añadir</button>
+          </div>
+
+          <div class="card-product"> <!--Producto8-->
+            <h3>Mario Badescu</h3>
+            <p>
+              Spray Clarificante Mario Badescu Para Espalda Y Cuerpo 236Ml
+            </p>
+            <p>S/ 79.90</p>
+            <button>Añadir</button>
+          </div>
+
+          <div class="card-product"> <!--Producto9-->
+            <h3>Sheglam</h3>
+            <p>
+              Iluminador Duocromático Chroma-Glow Bloom Stardust Sheglam
+            </p>
+            <p>S/ 59.90</p>
+            <button>Añadir</button>
+          </div>
+
+          <div class="card-product"> <!--Producto10-->
+            <h3>Redken</h3>
+            <p>
+              Aceite Redken Naked Gloss 100ml
+            </p>
+            <p>S/ 134.90</p>
+            <button>Añadir</button>
+          </div>
+        </div>
+
       </div>
 
-      <div> <!--Producto2-->
-        <h3>Tocobo</h3>
-        <p>
-          Protector Solar Tocobo Blur Finish Sun Cushion White
-        </p>
-        <p>S/ 79.90</p>
-        <button>Añadir</button>
-      </div>
-
-      <div> <!--Producto3-->
-        <h3>Sheglam</h3>
-        <p>
-          Rubor En Gel Jelly-Licious Ahoy Sheglam
-        </p>
-        <p>S/ 41.90</p>
-        <button>Añadir</button>
-      </div>
-
-      <div> <!--Producto4-->
-        <h3>Masglo</h3>
-        <p>
-          Esmalte Masglo Clinical Nails Emergency 4ml
-        </p>
-        <p>S/ 69.90</p>
-        <button>Añadir</button>
-      </div>
-
-      <div> <!--Producto5-->
-        <h3>Sheglam</h3>
-        <p>
-          Gel De Cejas Con Brocha Crystal Clear Sheglam
-        </p>
-        <p>S/ 31.90</p>
-        <button>Añadir</button>
-      </div>
-
-      <div> <!--Producto6-->
-        <h3>L'oreal Paris</h3>
-        <p>
-          Labial Líquido Infallible Laque Resistance Worth It Medium L'Oreal Paris
-        </p>
-        <p>S/ 75.90</p>
-        <button>Añadir</button>
-      </div>
-
-      <div> <!--Producto7-->
-        <h3>Sheglam</h3>
-        <p>
-          Rubor Color Bloom Acabado Mate Devoted Sheglam
-        </p>
-        <p>S/ 39.90</p>
-        <button>Añadir</button>
-      </div>
-
-      <div> <!--Producto8-->
-        <h3>Mario Badescu</h3>
-        <p>
-          Spray Clarificante Mario Badescu Para Espalda Y Cuerpo 236Ml
-        </p>
-        <p>S/ 79.90</p>
-        <button>Añadir</button>
-      </div>
-
-      <div> <!--Producto9-->
-        <h3>Sheglam</h3>
-        <p>
-          Iluminador Duocromático Chroma-Glow Bloom Stardust Sheglam
-        </p>
-        <p>S/ 59.90</p>
-        <button>Añadir</button>
-      </div>
-
-      <div> <!--Producto10-->
-        <h3>Redken</h3>
-        <p>
-          Aceite Redken Naked Gloss 100ml
-        </p>
-        <p>S/ 134.90</p>
-        <button>Añadir</button>
-      </div>
-
+      <button class="btn-arrow">→</button>
     </div>
   </section>
 
